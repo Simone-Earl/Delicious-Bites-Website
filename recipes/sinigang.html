@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sinigang - Delicious Bites</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-inner">
+                <div class="logo">
+                    <h1>
+                        <a href="../index.html">
+                            <img src="../images/icon.png" alt="Logo Icon" class="logo-icon"> Delicious Bites
+                        </a>
+                    </h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li>
+                            <button id="backButton" class="back-btn">
+                              <i class="fa-solid fa-arrow-left-long"></i>
+                            </button>
+                        </li>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../recipes.html">Recipes</a></li>
+                        <li><a href="../about.html">About</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <form class="search-container" action="" method="GET" id="searchForm">
+                    <input type="text" placeholder="Search..." name="query" class="search-input" id="searchInput" autocomplete="off">
+                    <button type="submit" class="search-btn" id="searchBtn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <div id="suggestions" class="suggestions"></div> <!-- Suggestions container -->
+                </form>
+                
+                <button class="menu-toggle" id="menuToggle">&#9776;</button>
+            </div>
+        </div>
+        <div class="side-menu" id="sideMenu">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../recipes.html">Recipes</a>
+                    <div class="dropdown">
+                        <a href="bagnet.html" class="dropdown-item">Bagnet</a>
+                        <a href="beef-stir-fry.html" class="dropdown-item">Beef Stir Fry</a>
+                        <a href="beef-stroganoff.html" class="dropdown-item">Beef Stroganoff</a>
+                        <a href="chicken-adobo.html" class="dropdown-item">Chicken Adobo</a>
+                        <a href="chicken-alfredo.html" class="dropdown-item">Chicken Alfredo</a>
+                        <a href="chicken-tikka-masala.html" class="dropdown-item">Chicken Tikka Masala</a>
+                        <a href="chocolate-lava-cake.html" class="dropdown-item">Chocolate Lava Cake</a>
+                        <a href="egg-sandwich.html" class="dropdown-item">Egg Sandwich</a>
+                        <a href="greek-salad.html" class="dropdown-item">Greek Salad</a>
+                        <a href="maki-roll.html" class="dropdown-item">Maki Roll</a>
+                        <a href="mushroom-risotto.html" class="dropdown-item">Mushroom Risotto</a>
+                        <a href="shrimp-tacos.html" class="dropdown-item">Shrimp Tacos</a>
+                        <a href="sinigang.html" class="dropdown-item">Sinigang</a>
+                        <a href="spaghetti-carbonara.html" class="dropdown-item">Spaghetti Carbonara</a>
+                        <a href="sushi-bake.html" class="dropdown-item">Sushi Bake</a>
+                        <a href="sweet-potato-bites.html" class="dropdown-item">Sweet Potato Bites</a>
+                    </div></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+    <main class="container">
+        <section class="recipe-detail">
+            <img src="images/sinigang.png" alt="Sinigang">
+            <div id="cooking">
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div id=area>
+                    <div id="sides">
+                        <div id="pan"></div>
+                        <div id="handle"></div>
+                    </div>
+                    <div id="pancake">
+                        <div id="pastry"></div>
+                    </div>
+                </div>
+            </div>
+            <h2>Sinigang</h2>
+            <p>Sinigang is a traditional Filipino sour soup made with tamarind and various vegetables, typically served with pork, beef, or shrimp. It's known for its tangy and savory flavor.</p>
+            <h3>Ingredients</h3>
+            <ul>
+                <li>500g pork ribs or belly, cut into pieces</li>
+                <li>1 large onion, chopped</li>
+                <li>2 tomatoes, chopped</li>
+                <li>1 packet sinigang mix (tamarind soup base)</li>
+                <li>1 daikon radish, sliced</li>
+                <li>1 cup green beans, trimmed</li>
+                <li>1 eggplant, sliced</li>
+                <li>2-3 cups water</li>
+                <li>2-3 green chilies (optional)</li>
+                <li>Salt and pepper to taste</li>
+                <li>2 tbsp fish sauce (optional)</li>
+            </ul>
+            <h3>Instructions</h3>
+            <ol>
+                <li>In a large pot, bring water to a boil. Add pork pieces and cook until tender, about 45 minutes.</li>
+                <li>Add onions and tomatoes to the pot. Continue cooking for another 10 minutes.</li>
+                <li>Stir in the sinigang mix and cook for another 5 minutes.</li>
+                <li>Add radish, green beans, and eggplant. Cook until vegetables are tender, about 10-15 minutes.</li>
+                <li>Season with salt, pepper, and fish sauce if desired. Add green chilies for extra heat, if using.</li>
+                <li>Serve hot with rice and enjoy!</li>
+            </ol>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Delicious Bites. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="../js/scripts.js"></script>
+</body>
+</html>

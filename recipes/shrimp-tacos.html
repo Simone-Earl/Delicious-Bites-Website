@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shrimp Tacos - Delicious Bites</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-inner">
+                <div class="logo">
+                    <h1>
+                        <a href="../index.html">
+                            <img src="../images/icon.png" alt="Logo Icon" class="logo-icon"> Delicious Bites
+                        </a>
+                    </h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li>
+                            <button id="backButton" class="back-btn">
+                              <i class="fa-solid fa-arrow-left-long"></i>
+                            </button>
+                        </li>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../recipes.html">Recipes</a></li>
+                        <li><a href="../about.html">About</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <form class="search-container" action="" method="GET" id="searchForm">
+                    <input type="text" placeholder="Search..." name="query" class="search-input" id="searchInput" autocomplete="off">
+                    <button type="submit" class="search-btn" id="searchBtn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <div id="suggestions" class="suggestions"></div> <!-- Suggestions container -->
+                </form>
+                
+                <button class="menu-toggle" id="menuToggle">&#9776;</button>
+            </div>
+        </div>
+        <div class="side-menu" id="sideMenu">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../recipes.html">Recipes</a>
+                    <div class="dropdown">
+                        <a href="bagnet.html" class="dropdown-item">Bagnet</a>
+                        <a href="beef-stir-fry.html" class="dropdown-item">Beef Stir Fry</a>
+                        <a href="beef-stroganoff.html" class="dropdown-item">Beef Stroganoff</a>
+                        <a href="chicken-adobo.html" class="dropdown-item">Chicken Adobo</a>
+                        <a href="chicken-alfredo.html" class="dropdown-item">Chicken Alfredo</a>
+                        <a href="chicken-tikka-masala.html" class="dropdown-item">Chicken Tikka Masala</a>
+                        <a href="chocolate-lava-cake.html" class="dropdown-item">Chocolate Lava Cake</a>
+                        <a href="egg-sandwich.html" class="dropdown-item">Egg Sandwich</a>
+                        <a href="greek-salad.html" class="dropdown-item">Greek Salad</a>
+                        <a href="maki-roll.html" class="dropdown-item">Maki Roll</a>
+                        <a href="mushroom-risotto.html" class="dropdown-item">Mushroom Risotto</a>
+                        <a href="shrimp-tacos.html" class="dropdown-item">Shrimp Tacos</a>
+                        <a href="sinigang.html" class="dropdown-item">Sinigang</a>
+                        <a href="spaghetti-carbonara.html" class="dropdown-item">Spaghetti Carbonara</a>
+                        <a href="sushi-bake.html" class="dropdown-item">Sushi Bake</a>
+                        <a href="sweet-potato-bites.html" class="dropdown-item">Sweet Potato Bites</a>
+                    </div></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+    <main class="container">
+        <section class="recipe-detail">
+            <img src="images/shrimp-tacos.webp" alt="Shrimp Tacos">
+            <div id="cooking">
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div id=area>
+                    <div id="sides">
+                        <div id="pan"></div>
+                        <div id="handle"></div>
+                    </div>
+                    <div id="pancake">
+                        <div id="pastry"></div>
+                    </div>
+                </div>
+            </div>
+            <h2>Shrimp Tacos</h2>
+            <p>Flavorful shrimp seasoned with spices and served in soft tortillas with fresh toppings. A quick and delicious taco recipe that's perfect for any day of the week.</p>
+            <h3>Ingredients</h3>
+            <ul>
+                <li>400g shrimp, peeled and deveined</li>
+                <li>2 tbsp olive oil</li>
+                <li>1 tsp paprika</li>
+                <li>1 tsp ground cumin</li>
+                <li>1 tsp garlic powder</li>
+                <li>1/2 tsp chili powder</li>
+                <li>8 small tortillas</li>
+                <li>Shredded lettuce, chopped tomatoes, and diced avocado for topping</li>
+                <li>Lime wedges for serving</li>
+            </ul>
+            <h3>Instructions</h3>
+            <ol>
+                <li>In a bowl, toss shrimp with olive oil, paprika, cumin, garlic powder, and chili powder.</li>
+                <li>Cook shrimp in a pan over medium-high heat until pink and cooked through.</li>
+                <li>Warm tortillas and fill with shrimp and your choice of toppings.</li>
+                <li>Serve with lime wedges on the side.</li>
+            </ol>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Delicious Bites. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="../js/scripts.js"></script>
+</body>
+</html>

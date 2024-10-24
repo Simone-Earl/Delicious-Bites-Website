@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Bites - Recipes</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-inner">
+                <div class="logo">
+                    <h1>
+                        <a href="index.html">
+                            <img src="images/icon.png" alt="Logo Icon" class="logo-icon"> Delicious Bites
+                        </a>
+                    </h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li>
+                            <button id="backButton" class="back-btn">
+                              <i class="fa-solid fa-arrow-left-long"></i>
+                            </button>
+                        </li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="recipes.html">Recipes</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <form class="search-container" action="" method="GET" id="searchForm">
+                    <input type="text" placeholder="Search..." name="query" class="search-input" id="searchInput" autocomplete="off">
+                    <button type="submit" class="search-btn" id="searchBtn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <div id="suggestions" class="suggestions"></div> <!-- Suggestions container -->
+                </form>
+                
+                <button class="menu-toggle" id="menuToggle">&#9776;</button>
+            </div>
+        </div>
+        <div class="side-menu" id="sideMenu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="recipes.html">Recipes</a>
+                    <div class="dropdown">
+                        <a href="recipes/bagnet.html" class="dropdown-item">Bagnet</a>
+                        <a href="recipes/beef-stir-fry.html" class="dropdown-item">Beef Stir Fry</a>
+                        <a href="recipes/beef-stroganoff.html" class="dropdown-item">Beef Stroganoff</a>
+                        <a href="recipes/chicken-adobo.html" class="dropdown-item">Chicken Adobo</a>
+                        <a href="recipes/chicken-alfredo.html" class="dropdown-item">Chicken Alfredo</a>
+                        <a href="recipes/chicken-tikka-masala.html" class="dropdown-item">Chicken Tikka Masala</a>
+                        <a href="recipes/chocolate-lava-cake.html" class="dropdown-item">Chocolate Lava Cake</a>
+                        <a href="recipes/egg-sandwich.html" class="dropdown-item">Egg Sandwich</a>
+                        <a href="recipes/greek-salad.html" class="dropdown-item">Greek Salad</a>
+                        <a href="recipes/maki-roll.html" class="dropdown-item">Maki Roll</a>
+                        <a href="recipes/mushroom-risotto.html" class="dropdown-item">Mushroom Risotto</a>
+                        <a href="recipes/shrimp-tacos.html" class="dropdown-item">Shrimp Tacos</a>
+                        <a href="recipes/sinigang.html" class="dropdown-item">Sinigang</a>
+                        <a href="recipes/spaghetti-carbonara.html" class="dropdown-item">Spaghetti Carbonara</a>
+                        <a href="recipes/sushi-bake.html" class="dropdown-item">Sushi Bake</a>
+                        <a href="recipes/sweet-potato-bites.html" class="dropdown-item">Sweet Potato Bites</a>
+                    </div></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="recipe-articles">
+            <h2>Our Latest Recipes</h2>
+
+            <div class="posts-grid">
+                <article class="post">
+                    <a href="recipes/spaghetti-carbonara.html">
+                        <img src="recipes/images/spaghetti-carbonara.jpg" alt="Spaghetti Carbonara">
+                        <h3>Spaghetti Carbonara</h3>
+                        <p>A classic Italian pasta dish made with eggs, cheese, pancetta, and pepper.</p>
+                    </a>
+                </article>
+
+                <article class="post">
+                    <a href="recipes/chicken-tikka-masala.html">
+                        <img src="recipes/images/chicken-tikka-masala.webp" alt="Chicken Tikka Masala">
+                        <h3>Chicken Tikka Masala</h3>
+                        <p>Juicy chicken pieces marinated in spices and yogurt, cooked in a creamy tomato sauce.</p>
+                    </a>
+                </article>
+
+                <article class="post">
+                    <a href="recipes/beef-stir-fry.html">
+                        <img src="recipes/images/beef-stir-fry.webp" alt="Beef Stir-Fry">
+                        <h3>Beef Stir-Fry</h3>
+                        <p>This Beef Stir-Fry is a quick and delicious dish featuring tender beef strips and crisp vegetables, all coated in a savory sauce. Perfect for a busy weeknight dinner.</p>
+                    </a>
+                </article>
+
+                <article class="post">
+                    <a href="recipes/chocolate-lava-cake.html">
+                        <img src="recipes/images/chocolate-lava-cake.webp" alt="Chocolate Lava Cake">
+                        <h3>Chocolate Lava Cake</h3>
+                        <p>Decadent chocolate cake with a gooey, molten center. Perfect for dessert.</p>
+                    </a>
+                </article>
+
+                <article class="post">
+                    <a href="recipes/beef-stroganoff.html">
+                    <img src="recipes/images/beef-stroganoff.webp" alt="Beef Stroganoff">
+                    <h3>Beef Stroganoff</h3>
+                    <p>A rich and creamy beef dish with mushrooms and sour cream.</p>
+                    </a>
+                </article>
+
+                <article class="post">
+                    <a href="recipes/chicken-alfredo.html">
+                    <img src="recipes/images/chicken-alfredo.webp" alt="Chicken Alfredo">
+                    <h3>Chicken Alfredo</h3>
+                    <p>Creamy Alfredo sauce with tender chicken over fettuccine pasta.</p>
+                    </a>
+                </article>
+
+                <article class="post">
+                    <a href="recipes/shrimp-tacos.html">
+                    <img src="recipes/images/shrimp-tacos.webp" alt="Shrimp Tacos">
+                    <h3>Shrimp Tacos</h3>
+                    <p>Delicious shrimp served in soft tortillas with a fresh slaw.</p>
+                    </a>
+                </article>
+
+                <article class="post">
+                    <a href="recipes/greek-salad.html">
+                    <img src="recipes/images/greek-salad.webp" alt="Greek Salad">
+                    <h3>Greek Salad</h3>
+                    <p>A fresh and tangy salad with cucumbers, tomatoes, olives, and feta cheese.</p>
+                    </a>
+                </article>
+
+                <article class="post">
+                    <a href="recipes/mushroom-risotto.html">
+                    <img src="recipes/images/mushroom-risotto.webp" alt="Mushroom Risotto">
+                    <h3>Mushroom Risotto</h3>
+                    <p>A creamy risotto with earthy mushrooms and Parmesan cheese. A comforting and elegant dish perfect for any occasion.</p>
+                    </a>
+                </article>
+
+                <article class="post">
+                    <a href="recipes/chicken-adobo.html">
+                    <img src="recipes/images/chicken-adobo.webp" alt="Chicken Adobo">
+                    <h3>Chicken Adobo</h3>
+                    <p>A popular Filipino dish made with chicken simmered in a mixture of soy sauce, vinegar, garlic, and spices. It's flavorful and perfect with rice.</p>
+                    </a>
+                </article>
+
+                <article class="post">
+                    <a href="recipes/sweet-potato-bites.html">
+                    <img src="recipes/images/sweet-potato-bites.webp" alt="Sweet Potato Bites">
+                    <h3>Sweet Potato Bites</h3>
+                    <p>Deliciously crispy and tender sweet potato bites, perfect as an appetizer or a side dish. They are seasoned and baked to perfection.</p>
+                    </a>
+                </article>
+
+                <article class="post">
+                    <a href="recipes/bagnet.html">
+                    <img src="recipes/images/bagnet.png" alt="Bagnet">
+                    <h3>Bagnet</h3>
+                    <p>Bagnet is a Filipino dish featuring deep-fried pork belly, known for its crispy skin and tender meat. It's a delicious treat often enjoyed with rice and dipping sauces.</p>
+                    </a>
+                </article>
+
+                <article class="post">
+                    <a href="recipes/sinigang.html">
+                    <img src="recipes/images/sinigang.png" alt="Sinigang">
+                    <h3>Sinigang</h3>
+                    <p>Sinigang is a traditional Filipino sour soup made with tamarind and various vegetables, typically served with pork, beef, or shrimp. It's known for its tangy and savory flavor.</p>
+                    </a>
+                </article>
+
+                <article class="post">
+                    <a href="recipes/maki-roll.html">
+                    <img src="recipes/images/maki-roll.webp" alt="Maki Roll">
+                    <h3>Maki Roll</h3>
+                    <p>Maki Roll is a popular Japanese sushi roll made with seasoned rice and a variety of fillings, wrapped in seaweed. It's a versatile dish that you can customize with your favorite ingredients.</p>
+                    </a>
+                </article>
+
+                <article class="post">
+                    <a href="recipes/egg-sandwich.html">
+                    <img src="recipes/images/egg-sandwich.webp" alt="Egg Sandwich">
+                    <h3>Egg Sandwich</h3>
+                    <p>An easy and delicious egg sandwich, perfect for a quick breakfast or lunch. Creamy egg filling with your choice of fresh vegetables and seasonings, all sandwiched between slices of bread.</p>
+                    </a>
+                </article>
+
+                <article class="post">
+                    <a href="recipes/sushi-bake.html">
+                    <img src="recipes/images/sushi-bake.webp" alt="Sushi Bake">
+                    <h3>Sushi Bake</h3>
+                    <p>Sushi Bake is a delicious and easy-to-make dish inspired by sushi rolls, but in a convenient casserole form. It's a great party dish or family meal, combining sushi rice, seafood, and creamy sauce.</p>
+                    </a>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Delicious Bites. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

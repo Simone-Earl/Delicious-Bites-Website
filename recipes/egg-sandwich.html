@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Egg Sandwich - Delicious Bites</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-inner">
+                <div class="logo">
+                    <h1>
+                        <a href="../index.html">
+                            <img src="../images/icon.png" alt="Logo Icon" class="logo-icon"> Delicious Bites
+                        </a>
+                    </h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li>
+                            <button id="backButton" class="back-btn">
+                              <i class="fa-solid fa-arrow-left-long"></i>
+                            </button>
+                        </li>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../recipes.html">Recipes</a></li>
+                        <li><a href="../about.html">About</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <form class="search-container" action="" method="GET" id="searchForm">
+                    <input type="text" placeholder="Search..." name="query" class="search-input" id="searchInput" autocomplete="off">
+                    <button type="submit" class="search-btn" id="searchBtn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <div id="suggestions" class="suggestions"></div> <!-- Suggestions container -->
+                </form>
+                
+                <button class="menu-toggle" id="menuToggle">&#9776;</button>
+            </div>
+        </div>
+        <div class="side-menu" id="sideMenu">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../recipes.html">Recipes</a>
+                    <div class="dropdown">
+                        <a href="bagnet.html" class="dropdown-item">Bagnet</a>
+                        <a href="beef-stir-fry.html" class="dropdown-item">Beef Stir Fry</a>
+                        <a href="beef-stroganoff.html" class="dropdown-item">Beef Stroganoff</a>
+                        <a href="chicken-adobo.html" class="dropdown-item">Chicken Adobo</a>
+                        <a href="chicken-alfredo.html" class="dropdown-item">Chicken Alfredo</a>
+                        <a href="chicken-tikka-masala.html" class="dropdown-item">Chicken Tikka Masala</a>
+                        <a href="chocolate-lava-cake.html" class="dropdown-item">Chocolate Lava Cake</a>
+                        <a href="egg-sandwich.html" class="dropdown-item">Egg Sandwich</a>
+                        <a href="greek-salad.html" class="dropdown-item">Greek Salad</a>
+                        <a href="maki-roll.html" class="dropdown-item">Maki Roll</a>
+                        <a href="mushroom-risotto.html" class="dropdown-item">Mushroom Risotto</a>
+                        <a href="shrimp-tacos.html" class="dropdown-item">Shrimp Tacos</a>
+                        <a href="sinigang.html" class="dropdown-item">Sinigang</a>
+                        <a href="spaghetti-carbonara.html" class="dropdown-item">Spaghetti Carbonara</a>
+                        <a href="sushi-bake.html" class="dropdown-item">Sushi Bake</a>
+                        <a href="sweet-potato-bites.html" class="dropdown-item">Sweet Potato Bites</a>
+                    </div></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+    <main class="container">
+        <section class="recipe-detail">
+            <img src="images/egg-sandwich.webp" alt="Egg Sandwich">
+            <div id="cooking">
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div id=area>
+                    <div id="sides">
+                        <div id="pan"></div>
+                        <div id="handle"></div>
+                    </div>
+                    <div id="pancake">
+                        <div id="pastry"></div>
+                    </div>
+                </div>
+            </div>
+            <h2>Egg Sandwich</h2>
+            <p>An easy and delicious egg sandwich, perfect for a quick breakfast or lunch. Creamy egg filling with your choice of fresh vegetables and seasonings, all sandwiched between slices of bread.</p>
+            <h3>Ingredients</h3>
+            <ul>
+                <li>4 large eggs</li>
+                <li>2 tbsp mayonnaise</li>
+                <li>1 tbsp Dijon mustard</li>
+                <li>Salt and pepper to taste</li>
+                <li>1 celery stalk, finely chopped</li>
+                <li>2 green onions, sliced</li>
+                <li>4 slices of bread (white, whole wheat, or your choice)</li>
+                <li>2 leaves of lettuce (optional)</li>
+                <li>1 tomato, sliced (optional)</li>
+            </ul>
+            <h3>Instructions</h3>
+            <ol>
+                <li>Boil eggs in a pot of water for 10 minutes. Remove from heat, drain, and cool in ice water. Peel and chop the eggs.</li>
+                <li>In a bowl, mix mayonnaise, Dijon mustard, salt, and pepper. Add chopped eggs, celery, and green onions. Stir until well combined.</li>
+                <li>Toast the bread slices if desired. Spread egg mixture evenly on two slices of bread.</li>
+                <li>Top with lettuce and tomato if using. Place the remaining bread slices on top to form sandwiches.</li>
+                <li>Cut sandwiches in half and serve immediately, or wrap and take with you for a lunch on the go.</li>
+            </ol>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Delicious Bites. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="../js/scripts.js"></script>
+</body>
+</html>

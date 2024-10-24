@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Bites - About</title>
+    <link rel="stylesheet" href="css/style_about.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-inner">
+                <div class="logo">
+                    <h1>
+                        <a href="index.html">
+                            <img src="images/icon.png" alt="Logo Icon" class="logo-icon"> Delicious Bites
+                        </a>
+                    </h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li>
+                            <button id="backButton" class="back-btn">
+                              <i class="fa-solid fa-arrow-left-long"></i>
+                            </button>
+                        </li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="recipes.html">Recipes</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <form class="search-container" action="" method="GET" id="searchForm">
+                    <input type="text" placeholder="Search..." name="query" class="search-input" id="searchInput" autocomplete="off">
+                    <button type="submit" class="search-btn" id="searchBtn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <div id="suggestions" class="suggestions"></div> <!-- Suggestions container -->
+                </form>
+                
+                <button class="menu-toggle" id="menuToggle">&#9776;</button>
+            </div>
+        </div>
+        <div class="side-menu" id="sideMenu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="recipes.html">Recipes</a>
+                    <div class="dropdown">
+                        <a href="recipes/bagnet.html" class="dropdown-item">Bagnet</a>
+                        <a href="recipes/beef-stir-fry.html" class="dropdown-item">Beef Stir Fry</a>
+                        <a href="recipes/beef-stroganoff.html" class="dropdown-item">Beef Stroganoff</a>
+                        <a href="recipes/chicken-adobo.html" class="dropdown-item">Chicken Adobo</a>
+                        <a href="recipes/chicken-alfredo.html" class="dropdown-item">Chicken Alfredo</a>
+                        <a href="recipes/chicken-tikka-masala.html" class="dropdown-item">Chicken Tikka Masala</a>
+                        <a href="recipes/chocolate-lava-cake.html" class="dropdown-item">Chocolate Lava Cake</a>
+                        <a href="recipes/egg-sandwich.html" class="dropdown-item">Egg Sandwich</a>
+                        <a href="recipes/greek-salad.html" class="dropdown-item">Greek Salad</a>
+                        <a href="recipes/maki-roll.html" class="dropdown-item">Maki Roll</a>
+                        <a href="recipes/mushroom-risotto.html" class="dropdown-item">Mushroom Risotto</a>
+                        <a href="recipes/shrimp-tacos.html" class="dropdown-item">Shrimp Tacos</a>
+                        <a href="recipes/sinigang.html" class="dropdown-item">Sinigang</a>
+                        <a href="recipes/spaghetti-carbonara.html" class="dropdown-item">Spaghetti Carbonara</a>
+                        <a href="recipes/sushi-bake.html" class="dropdown-item">Sushi Bake</a>
+                        <a href="recipes/sweet-potato-bites.html" class="dropdown-item">Sweet Potato Bites</a>
+                    </div></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+    <main class="container">
+        <section class="about-us">
+            <div class="container">
+                <h2>About Us</h2>
+                <p>At Delicious Bites, we are passionate about bringing people together through the love of food. Our mission is to create and share mouth-watering recipes that inspire creativity in the kitchen. Whether you're an experienced chef or just starting your culinary journey, we're here to provide you with all the tools and tips you need to create delicious meals.</p>
+            </div>
+        </section>
+        <section class="content">
+            <p>Welcome to Delicious Bites, your ultimate destination for all things food! Our mission is to inspire and empower home cooks of all levels to create delicious, wholesome meals with confidence and joy. Whether you're a seasoned chef or just starting your culinary journey, we're here to provide you with mouth-watering recipes, cooking tips, and a community of fellow food enthusiasts.</p>
+            
+            <h3>Our Story</h3>
+            <p>Delicious Bites was founded in 2023 by a group of passionate food lovers who believe that cooking is more than just a necessity it's a form of expression, a way to connect with others, and a source of endless creativity. We started this website to share our favorite recipes and to celebrate the art of home cooking.</p>
+
+            <h3>Meet the Team</h3>
+            <p>Our team is composed of dedicated food enthusiasts, each bringing their unique perspective and expertise to the table:</p>
+            <ul class="team-list">
+                <li>
+                    <strong>Simone Earl Madarang</strong> - Founder & Head Chef
+                    <p class="member-description">Simone has over 15 years of culinary experience and a deep love for creating new and exciting dishes. His goal is to make gourmet cooking accessible to everyone.</p>
+                    <img src="images/simone.jpg" alt="Simone Earl Madarang" class="member-photo">
+                </li>
+                <li>
+                    <strong>Lawrence Cortez</strong> - Recipe Developer
+                    <p class="member-description">Lawrence is a self-taught cook who specializes in comfort food and international cuisines. He enjoys experimenting with flavors and ingredients to create unique recipes.</p>
+                    <img src="images/LAWRENCE.jpg" alt="Lawrence Cortez" class="member-photo">
+                </li>
+                <li>
+                    <strong>Alvin Macaraeg</strong> - Food Photographer
+                    <p class="member-description">Alvin captures the beauty of our dishes with his stunning photography. He believes that presentation is just as important as taste.</p>
+                    <img src="images/GORSS.jpg" alt="Alvin Macaraeg" class="member-photo">
+                </li>
+                <li>
+                    <strong>Joriz Guarino Pintero</strong> - Nutritionist
+                    <p class="member-description">Joriz ensures that our recipes are not only delicious but also balanced and nutritious. He provides tips on healthy eating and ingredient substitutions.</p>
+                    <img src="images/JORIZ.jpg" alt="Joriz Guarino Pintero" class="member-photo">
+                </li>
+            </ul>
+            
+
+            <h3>Our Values</h3>
+            <p>At Delicious Bites, we are committed to:</p>
+            <ul>
+                <li>Sharing high-quality, tested recipes that you can trust.</li>
+                <li>Encouraging creativity and experimentation in the kitchen.</li>
+                <li>Fostering a supportive and inclusive food community.</li>
+                <li>Promoting sustainable and ethical cooking practices.</li>
+            </ul>
+
+            <br>
+
+            <p>Thank you for visiting Delicious Bites. We hope our recipes inspire you to cook more at home and to share your creations with loved ones. Happy cooking!</p>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Delicious Bites. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

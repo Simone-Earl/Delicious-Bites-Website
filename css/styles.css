@@ -1,0 +1,1129 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #fff8e1;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* Header Styles */
+header {
+    background-color: #ff6f00;
+    color: #fff;
+    padding: 10px 0;
+    border-bottom: 4px solid #e65100;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 2em;
+    color: #fff;
+}
+
+.logo h1 a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.logo-icon {
+    width: 55px;
+    height: auto;
+    vertical-align: middle;
+    margin-right: 1px;
+}
+
+header h1 {
+    text-align: center;
+    margin: 0;
+    font-size: 2.5em;
+    color: #fff3e0;
+}
+
+/* Navigation Styles */
+nav ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between; /* Distribute space evenly */
+    align-items: center; /* Vertically center items */
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+nav ul li a:hover {
+    color: #ffcc80;
+}
+
+/* Hero Section Styles */
+.hero {
+    position: relative;
+    background: url('../images/homepage\ pic1.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 80px 20px;
+    transform-origin: center; /* Ensure the image scales from the center */
+    transition: transform 0.2s ease-out; /* Smooth transition */
+}
+
+.hero-container {
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    height: 500px;
+    width: 100%;
+}
+
+.hero {
+    background: url('../images/homepage\ pic1.jpg') no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    transition: transform 0.2s ease-out;
+    transform-origin: center;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: 1;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: #fff;
+    text-align: center;
+    transition: transform 0.2s ease-out;
+}
+
+.hero-content h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.cta-header {
+    display: none;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #ff5722;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.cta-button:hover {
+    background-color: #e64a19;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+    .cta-header {
+        display: block;
+    }
+
+    nav ul {
+        margin-left: auto;
+    }
+}
+
+/* Featured Posts Section */
+.featured-posts {
+    margin: 20px 0;
+}
+
+.featured-posts h2 {
+    text-align: center;
+    font-size: 2em;
+    color: #e65100;
+}
+
+.posts-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.post {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s, filter 0.3s;
+}
+
+.post img {
+    width: 100%;
+    height: auto;
+    transition: filter 0.3s;
+}
+
+.post h3, .post p, .post a {
+    z-index: 2;
+    position: relative;
+    transition: opacity 0.3s;
+}
+
+.post a {
+    display: block;
+    text-decoration: none;
+    color: inherit; /* Inherit text color */
+    position: relative;
+    z-index: 2; /* Ensure it's on top of the background */
+}
+
+/* Apply blur effect to content inside the anchor */
+.post:hover img, .post:hover h3, .post:hover p {
+    filter: blur(3px);
+}
+
+/* On hover, transform and change background color */
+.post:hover {
+    transform: scale(1.05);
+    background-color: #ff6f00;
+}
+
+/* "See more" overlay */
+.post::before {
+    content: "See more";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5em;
+    color: #ff6f00;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 0.5em 1em;
+    opacity: 0;
+    z-index: 3;
+    transition: opacity 0.3s;
+    pointer-events: none; /* Prevents overlay from blocking clicks */
+}
+
+/* Show "See more" when hovered */
+.post:hover::before {
+    opacity: 1;
+}
+
+/* Remove the default link styling */
+.post a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/*Changes in Recipe Details */
+.recipe-detail h2{
+    color: #ff6f00;
+    text-align: center;  
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5rem; 
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 20px 0;
+    padding: 10px 20px; 
+    border-bottom: 3px solid #ff6f00; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+.recipe-detail img{
+    display:block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 40%;
+    border-radius: 5%;
+}
+.recipe-detail h3{
+    color: #ff6f00;
+    font-family: 'Roboto', sans-serif; 
+    font-size: 2.5rem; 
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 20px 0;
+    padding: 10px 20px; 
+    border-bottom: 3px solid #ff6f00; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer Styles */
+footer {
+    background-color: #e65100;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Contact Section Styles */
+.contact-intro {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-intro h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.contact-intro p {
+    font-size: 18px;
+}
+
+.contact-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.contact-info, .contact-form {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.contact-info h3, .contact-form h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.contact-info p, .contact-info ul {
+    font-size: 18px;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info ul li {
+    margin-bottom: 5px;
+}
+
+.contact-info ul li a {
+    text-decoration: none;
+    color: #ffa500;
+}
+
+/* Contact Form Styles */
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.contact-form input, .contact-form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: #ffa500;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #ff7f00;
+}
+
+/* Side Menu Styles */
+.side-menu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #ff6f00;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    z-index: 1000;
+}
+
+.side-menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.side-menu ul li {
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+}
+
+.side-menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+    display: block;
+}
+
+.side-menu ul li a:hover {
+    color: #ffcc80;
+}
+
+/* Menu Toggle Button */
+.menu-toggle {
+    font-size: 30px;
+    background-color: #ff6f00;
+    color: white;
+    border: none;
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.menu-toggle:focus {
+    outline: none;
+}
+
+@media (max-width: 600px) {
+    .menu-toggle {
+        top: 10px;
+        left: 10px;
+    }
+}
+
+/* Search Input Styles */
+.search-input {
+    width: 200px; /* Fixed width for the input */
+    padding: 8px;
+    border: 1px solid #e65100;
+    border-radius: 5px;
+    font-size: 1em;
+    color: #333;
+    background-color: #fff8e1;
+    display: none; /* Initially hidden */
+    opacity: 0; /* Start fully transparent */
+    transition: opacity 0.3s ease, width 0.3s ease; /* Animation for opacity and width */
+    width: 0; /* Start with width 0 for animation */
+}
+
+.search-input.show {
+    display: inline-block; /* Make it inline-block to allow width transition */
+    opacity: 1; /* Fade in */
+    width: 200px; /* Final width */
+}
+
+.search-btn {
+    background-color: #ff6f00;
+    color: white;
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-left: 5px; /* Space between input and button */
+}
+
+.search-btn i {
+    font-size: 1.2em; /* Adjust icon size */
+}
+
+.search-btn:hover {
+    background-color: #e64a19;
+}
+
+.search-btn:focus,
+.search-input:focus {
+    outline: none;
+}
+
+.suggestions {
+    background-color: #fff8e1; /* Match the website's background color */
+    border: 1px solid #e65100; /* Use the same orange tone as the website */
+    border-radius: 5px;
+    max-height: 200px;
+    overflow-y: auto;
+    display: none; /* Initially hidden */
+    position: absolute;
+    z-index: 1000;
+    width: 200px; /* Same as search input width */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+}
+
+.suggestions a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    background-color: #fff8e1; /* Consistent with the theme */
+    border-bottom: 2px solid #ffcc80; /* Add slight dividers between suggestions */
+}
+
+.suggestions a:last-child {
+    border-bottom: none; /* Remove border for the last item */
+}
+
+.suggestions a:hover {
+    background-color: #ff6f00; /* Match the hover color to the site's theme */
+    color: #fff;
+    border-bottom: 1px solid #e64a19; /* Add bottom border on hover for a sharper look */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+}
+
+/* Styles for Featured Posts */
+.featured-posts h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.posts-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around; /* Space posts evenly */
+}
+
+.post {
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    flex-basis: 23%; /* Ensure 4 posts fit in one row */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.post:hover {
+    transform: scale(1.05);
+}
+
+.post img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.post h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.post p {
+    font-size: 1rem;
+    color: #757575;
+    margin-bottom: 15px;
+}
+
+.read-more {
+    color: #D2691E;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design (for smaller screens) */
+@media (max-width: 768px) {
+    .post {
+        flex-basis: 48%; /* Two posts per row on medium screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .post {
+        flex-basis: 100%; /* One post per row on small screens */
+    }
+}
+
+.post {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, z-index 0.3s ease;
+}
+
+.post:hover {
+    transform: scale(1.05);
+    z-index: 10;
+}
+
+.post-expanded {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 20;
+}
+
+.post-expanded.visible {
+    opacity: 1;
+}
+
+.post-expanded img {
+    width: 60%;
+    border-radius: 8px;
+}
+
+.post-expanded h3, .post-expanded p {
+    margin: 10px;
+    text-align: center;
+}
+
+.side-menu {
+    height: 100%;
+    width: 250px; /* Set the width of the side menu */
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff8e1; /* White background */
+    border-right: 5px solid #ff6f00; /* Orange border on the right */
+    padding-top: 60px; /* Space from the top */
+    transition: transform 0.5s ease; /* Smooth transition */
+    transform: translateX(-100%); /* Initially hidden off-screen */
+    z-index: 1000; /* Ensure it is above other elements */
+}
+
+.side-menu.active {
+    transform: translateX(0); /* Slide in when active */
+}
+
+.side-menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.side-menu ul li {
+    padding: 15px;
+    margin: 10px 0;
+}
+
+.side-menu ul li a {
+    color: #333; /* Dark text color */
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.side-menu ul li a:hover {
+    color: #ff6f00; /* Change color on hover */
+    background-color: #f2f2f2; /* Light gray background on hover */
+}
+.side-menu ul li {
+    position: relative; /* Allow positioning of the pseudo-element */
+    padding: 15px;
+    margin: 10px 0;
+}
+
+.side-menu ul li a {
+    color: #333; /* Dark text color */
+    text-decoration: none; /* Remove default underline */
+    font-size: 1.2em;
+    display: inline-block; /* Make the link a block to help with positioning */
+}
+
+.side-menu ul li a::after {
+    content: ''; /* Create a pseudo-element */
+    display: block;
+    height: 2px; /* Height of the underline */
+    width: 0; /* Start with no width */
+    background-color: #ff6f00; /* Color of the underline */
+    transition: width 0.3s ease; /* Animate width */
+    position: absolute; /* Position it relative to the link */
+    bottom: -5px; /* Position it below the text */
+    left: 50%; /* Start from the center */
+    transform: translateX(-50%); /* Center the underline */
+}
+
+.side-menu ul li a:hover::after {
+    width: 100%; /* Expand the width on hover */
+}
+
+/* Dropdown Styles */
+.dropdown {
+    display: none; /* Hidden by default */
+    position: absolute; /* Absolute positioning for dropdown */
+    background-color: #fff8e1; /* Match the background color */
+    border: 1px solid #e65100; /* Use the orange tone for border */
+    border-radius: 5px; /* Smooth border corners */
+    z-index: 1000; /* Ensure it appears above other elements */
+    width: 200px; /* Same width as input field */
+    max-height: 300px; /* Allow more content with a max height */
+    overflow-y: auto; /* Add vertical scrollbar if necessary */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+/* Ensure parent is positioned correctly */
+.side-menu ul li {
+    position: relative;
+}
+
+/* Show dropdown on hover */
+.side-menu ul li:hover .dropdown {
+    display: block;
+}
+
+.dropdown-item {
+    padding: 10px 15px; /* Add padding for better spacing */
+    color: #333; /* Default text color */
+    text-decoration: none; /* Remove underline from links */
+    background-color: #fff8e1; /* Maintain consistent theme */
+    border-bottom: 2px solid #ffcc80; /* Divider between items */
+    display: block; /* Make items occupy full width */
+}
+
+/* Remove border from the last dropdown item */
+.dropdown-item:last-child {
+    border-bottom: none;
+}
+
+/* Styling for hover effect */
+.dropdown-item:hover {
+    background-color: #ff6f00; /* Match the hover color to the site's theme */
+    color: #fff;
+    border-bottom: 1px solid #e64a19; /* Add bottom border on hover for a sharper look */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+}
+
+.back-btn {
+    background-color: #ff6f00; /* Button color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    padding: 10px 15px; /* Padding */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 1.1em; /* Font size */
+    display: inline-flex; /* Align icon and text horizontally */
+    align-items: center; /* Vertical alignment */
+}
+
+.back-btn i {
+    margin-right: 8px; /* Space between icon and text */
+    font-size: 1.2em; /* Adjust icon size */
+}
+
+.back-btn:hover {
+    background-color: #e64a19; /* Darker color on hover */
+}
+
+.scroll-btn {
+    background-color: #ff6f00; /* Button color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    padding: 10px 15px; /* Padding */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    font-size: 1em; /* Font size */
+    margin-top: 20px; /* Margin for spacing */
+}
+
+.scroll-btn:hover {
+    background-color: #e64a19; /* Darker color on hover */
+}
+
+/* New Cooking animation */
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+
+#cooking {
+    position: relative;
+    margin: 0 auto;
+    top: 0;
+    width: 20vh;
+    height: 20vh;
+    overflow: hidden;
+}
+
+#cooking #area {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    height: 50%;
+    background-color: transparent;
+    transform-origin: 15% 60%;
+    animation: flip 2.1s ease-in-out infinite;
+}
+
+#cooking #area #sides {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-origin: 15% 60%;
+    animation: switchSide 2.1s ease-in-out infinite;
+}
+
+#cooking #area #sides #handle {
+    position: absolute;
+    bottom: 18%;
+    right: 80%;
+    width: 35%;
+    height: 20%;
+    background-color: transparent;
+    border-top: 1vh solid #333;
+    border-left: 1vh solid transparent;
+    border-radius: 100%;
+    transform: rotate(20deg) rotateX(0deg) scale(1.3, 0.9);
+}
+
+#cooking #area #sides #pan {
+    position: absolute;
+    bottom: 20%;
+    right: 30%;
+    width: 50%;
+    height: 8%;
+    background-color: #333;
+    border-radius: 0 0 1.4em 1.4em;
+    transform-origin: -15% 0;
+}
+
+#cooking #area #pancake {
+    position: absolute;
+    top: 24%;
+    width: 100%;
+    height: 100%;
+    transform: rotateX(85deg);
+    animation: jump 2.1s ease-in-out infinite;
+}
+
+#cooking #area #pancake #pastry {
+    position: absolute;
+    bottom: 26%;
+    right: 37%;
+    width: 40%;
+    height: 45%;
+    background-color: #333;
+    box-shadow: 0 0 3px 0 #333;
+    border-radius: 100%;
+    transform-origin: -20% 0;
+    animation: fly 2.1s ease-in-out infinite;
+}
+
+#cooking .bubble {
+    position: absolute;
+    border-radius: 100%;
+    box-shadow: 0 0 0.25vh #4d4d4d;
+    opacity: 0;
+}
+#cooking .bubble:nth-child(1) {
+    margin-top: 1.5vh; /* Reduced margin */
+    left: 58%;
+    width: 1.5vh; /* Reduced size */
+    height: 1.5vh; /* Reduced size */
+    background-color: #454545;
+    animation: bubble 2s cubic-bezier(0.53, 0.16, 0.39, 0.96) infinite;
+}
+
+#cooking .bubble:nth-child(2) {
+    margin-top: 2vh; /* Reduced margin */
+    left: 52%;
+    width: 1.2vh; /* Reduced size */
+    height: 1.2vh; /* Reduced size */
+    background-color: #3d3d3d;
+    animation: bubble 2s ease-in-out 0.35s infinite; 
+}
+
+#cooking .bubble:nth-child(3) {
+    margin-top: 1.2vh; /* Reduced margin */
+    left: 50%;
+    width: 1vh; /* Reduced size */
+    height: 1vh; /* Reduced size */
+    background-color: #333;
+    animation: bubble 1.5s cubic-bezier(0.53, 0.16, 0.39, 0.96) 0.55s infinite;
+}
+
+#cooking .bubble:nth-child(4) {
+    margin-top: 1.5vh; /* Reduced margin */
+    left: 56%;
+    width: 0.8vh; /* Reduced size */
+    height: 0.8vh; /* Reduced size */
+    background-color: #2b2b2b;
+    animation: bubble 1.8s cubic-bezier(0.53, 0.16, 0.39, 0.96) 0.55s infinite;
+}
+
+#cooking .bubble:nth-child(5) {
+    margin-top: 1.5vh; /* Reduced margin */
+    left: 63%;
+    width: 0.7vh; /* Reduced size */
+    height: 0.7vh; /* Reduced size */
+    background-color: #242424;
+    animation: bubble 1.6s ease-in-out 1s infinite; 
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1, 1);
+        opacity: 0.25;
+    }
+    50% {
+        transform: scale(1.2, 1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1, 1);
+        opacity: 0.25;
+    }
+}
+
+@keyframes flip {
+    0% {
+        transform: rotate(0deg);
+    }
+    5% {
+        transform: rotate(-27deg);
+    }
+    30%, 50% {
+        transform: rotate(0deg);
+    }
+    55% {
+        transform: rotate(27deg);
+    }
+    83.3% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes switchSide {
+    0% {
+        transform: rotateY(0deg);
+    }
+    50% {
+        transform: rotateY(180deg);
+    }
+    100% {
+        transform: rotateY(0deg);
+    }
+}
+
+@keyframes jump {
+    0% {
+        top: 24%; /* Added unit */
+        transform: rotateX(85deg);
+    }
+    25% {
+        top: 10%;
+        transform: rotateX(0deg);
+    }
+    50% {
+        top: 30%;
+        transform: rotateX(85deg);
+    }
+    75% {
+        transform: rotateX(0deg);
+    }
+    100% {
+        transform: rotateX(85deg);
+    }
+}
+
+@keyframes fly {
+    0% {
+        bottom: 26%;
+        transform: rotate(0deg);
+    }
+    10% {
+        bottom: 40%;
+    }
+    50% {
+        bottom: 26%;
+        transform: rotate(-190deg);
+    }
+    80% {
+        bottom: 40%;
+    }
+    100% {
+        bottom: 26%;
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes bubble {
+    0% {
+        transform: scale(0.15, 0.15);
+        top: 80%;
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.1, 1.1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(0.33, 0.33);
+        top: 60%;
+        opacity: 0;
+    }
+}
+
+
+
+/* Responsive Styles */
+@media screen and (max-width: 1024px) {
+    .container {
+        width: 90%;
+    }
+
+    .posts-grid {
+        gap: 15px;
+    }
+
+    .post {
+        flex-basis: 45%;
+    }
+
+    .hero-content h2 {
+        font-size: 2.5em;
+    }
+
+    .hero-content p {
+        font-size: 1.1em;
+    }
+}
+
+/* For mobile devices */
+@media screen and (max-width: 768px) {
+    .header-inner {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .hero-content h2 {
+        font-size: 2em;
+    }
+
+    .hero-content p {
+        font-size: 1em;
+    }
+
+    .post {
+        flex-basis: 100%;
+    }
+
+    .contact-content {
+        flex-direction: column;
+    }
+
+    .contact-info, .contact-form {
+        margin: 20px 0;
+    }
+
+    .search-input.show {
+        width: 150px;
+    }
+
+    .recipe-detail img {
+        width: 80%;
+    }
+}
+
+/* For very small devices */
+@media screen and (max-width: 480px) {
+    .logo h1 {
+        font-size: 1.5em;
+    }
+
+    .hero-content h2 {
+        font-size: 1.5em;
+    }
+
+    .hero-content p {
+        font-size: 0.9em;
+    }
+
+    .cta-button {
+        font-size: 0.9em;
+    }
+
+    .search-input.show {
+        width: 120px;
+    }
+
+    .recipe-detail h2, .recipe-detail h3 {
+        font-size: 1.8rem;
+    }
+}
+
+/* Adjust side menu for mobile */
+@media screen and (max-width: 768px) {
+    .side-menu {
+        width: 100%;
+    }
+
+    .menu-toggle {
+        top: 10px;
+        left: 10px;
+    }
+}
+
+/* Ensure the cooking animation stays proportional */
+@media screen and (max-width: 768px) {
+    #cooking {
+        width: 15vh;
+        height: 15vh;
+    }
+}

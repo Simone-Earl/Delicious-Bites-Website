@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beef Stir-Fry - Delicious Bites</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-inner">
+                <div class="logo">
+                    <h1>
+                        <a href="../index.html">
+                            <img src="../images/icon.png" alt="Logo Icon" class="logo-icon"> Delicious Bites
+                        </a>
+                    </h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li>
+                            <button id="backButton" class="back-btn">
+                              <i class="fa-solid fa-arrow-left-long"></i>
+                            </button>
+                        </li>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../recipes.html">Recipes</a></li>
+                        <li><a href="../about.html">About</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <form class="search-container" action="" method="GET" id="searchForm">
+                    <input type="text" placeholder="Search..." name="query" class="search-input" id="searchInput" autocomplete="off">
+                    <button type="submit" class="search-btn" id="searchBtn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <div id="suggestions" class="suggestions"></div> <!-- Suggestions container -->
+                </form>
+                
+                <button class="menu-toggle" id="menuToggle">&#9776;</button>
+            </div>
+        </div>
+        <div class="side-menu" id="sideMenu">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../recipes.html">Recipes</a>
+                    <div class="dropdown">
+                        <a href="bagnet.html" class="dropdown-item">Bagnet</a>
+                        <a href="beef-stir-fry.html" class="dropdown-item">Beef Stir Fry</a>
+                        <a href="beef-stroganoff.html" class="dropdown-item">Beef Stroganoff</a>
+                        <a href="chicken-adobo.html" class="dropdown-item">Chicken Adobo</a>
+                        <a href="chicken-alfredo.html" class="dropdown-item">Chicken Alfredo</a>
+                        <a href="chicken-tikka-masala.html" class="dropdown-item">Chicken Tikka Masala</a>
+                        <a href="chocolate-lava-cake.html" class="dropdown-item">Chocolate Lava Cake</a>
+                        <a href="egg-sandwich.html" class="dropdown-item">Egg Sandwich</a>
+                        <a href="greek-salad.html" class="dropdown-item">Greek Salad</a>
+                        <a href="maki-roll.html" class="dropdown-item">Maki Roll</a>
+                        <a href="mushroom-risotto.html" class="dropdown-item">Mushroom Risotto</a>
+                        <a href="shrimp-tacos.html" class="dropdown-item">Shrimp Tacos</a>
+                        <a href="sinigang.html" class="dropdown-item">Sinigang</a>
+                        <a href="spaghetti-carbonara.html" class="dropdown-item">Spaghetti Carbonara</a>
+                        <a href="sushi-bake.html" class="dropdown-item">Sushi Bake</a>
+                        <a href="sweet-potato-bites.html" class="dropdown-item">Sweet Potato Bites</a>
+                    </div></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+    <main class="container">
+        <section class="recipe-detail">
+            <img src="images/beef-stir-fry.webp" alt="Beef Stir-Fry">
+            <div id="cooking">
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div id=area>
+                    <div id="sides">
+                        <div id="pan"></div>
+                        <div id="handle"></div>
+                    </div>
+                    <div id="pancake">
+                        <div id="pastry"></div>
+                    </div>
+                </div>
+            </div>
+            <h2>Beef Stir-Fry</h2>
+            <p>This Beef Stir-Fry is a quick and delicious dish featuring tender beef strips and crisp vegetables, all coated in a savory sauce. Perfect for a busy weeknight dinner.</p>
+            <h3>Ingredients</h3>
+            <ul>
+                <li>500g beef sirloin or flank steak, thinly sliced</li>
+                <li>2 tbsp vegetable oil</li>
+                <li>1 bell pepper, sliced</li>
+                <li>1 onion, sliced</li>
+                <li>2 cloves garlic, minced</li>
+                <li>1 cup broccoli florets</li>
+                <li>1/2 cup snap peas</li>
+                <li>2 tbsp soy sauce</li>
+                <li>1 tbsp oyster sauce</li>
+                <li>1 tbsp hoisin sauce</li>
+                <li>1 tsp cornstarch mixed with 2 tbsp water (for thickening)</li>
+                <li>Salt and pepper to taste</li>
+                <li>Cooked rice or noodles for serving</li>
+            </ul>
+            <h3>Instructions</h3>
+            <ol>
+                <li>Heat vegetable oil in a large skillet or wok over high heat.</li>
+                <li>Add beef slices and cook until browned and cooked through, about 3-4 minutes. Remove beef from the skillet and set aside.</li>
+                <li>In the same skillet, add onions and garlic. Cook until fragrant, about 1 minute.</li>
+                <li>Add bell pepper, broccoli, and snap peas. Stir-fry until vegetables are tender-crisp, about 3-4 minutes.</li>
+                <li>Return beef to the skillet and add soy sauce, oyster sauce, and hoisin sauce. Stir well to combine.</li>
+                <li>Stir in the cornstarch mixture and cook for another 1-2 minutes, until the sauce has thickened.</li>
+                <li>Season with salt and pepper to taste. Serve hot over cooked rice or noodles.</li>
+            </ol>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Delicious Bites. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="../js/scripts.js"></script>
+</body>
+</html>

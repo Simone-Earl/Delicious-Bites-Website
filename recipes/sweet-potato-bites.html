@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Potato Bites - Delicious Bites</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-inner">
+                <div class="logo">
+                    <h1>
+                        <a href="../index.html">
+                            <img src="../images/icon.png" alt="Logo Icon" class="logo-icon"> Delicious Bites
+                        </a>
+                    </h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li>
+                            <button id="backButton" class="back-btn">
+                              <i class="fa-solid fa-arrow-left-long"></i>
+                            </button>
+                        </li>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../recipes.html">Recipes</a></li>
+                        <li><a href="../about.html">About</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <form class="search-container" action="" method="GET" id="searchForm">
+                    <input type="text" placeholder="Search..." name="query" class="search-input" id="searchInput" autocomplete="off">
+                    <button type="submit" class="search-btn" id="searchBtn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <div id="suggestions" class="suggestions"></div> <!-- Suggestions container -->
+                </form>
+                
+                <button class="menu-toggle" id="menuToggle">&#9776;</button>
+            </div>
+        </div>
+        <div class="side-menu" id="sideMenu">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../recipes.html">Recipes</a>
+                    <div class="dropdown">
+                        <a href="bagnet.html" class="dropdown-item">Bagnet</a>
+                        <a href="beef-stir-fry.html" class="dropdown-item">Beef Stir Fry</a>
+                        <a href="beef-stroganoff.html" class="dropdown-item">Beef Stroganoff</a>
+                        <a href="chicken-adobo.html" class="dropdown-item">Chicken Adobo</a>
+                        <a href="chicken-alfredo.html" class="dropdown-item">Chicken Alfredo</a>
+                        <a href="chicken-tikka-masala.html" class="dropdown-item">Chicken Tikka Masala</a>
+                        <a href="chocolate-lava-cake.html" class="dropdown-item">Chocolate Lava Cake</a>
+                        <a href="egg-sandwich.html" class="dropdown-item">Egg Sandwich</a>
+                        <a href="greek-salad.html" class="dropdown-item">Greek Salad</a>
+                        <a href="maki-roll.html" class="dropdown-item">Maki Roll</a>
+                        <a href="mushroom-risotto.html" class="dropdown-item">Mushroom Risotto</a>
+                        <a href="shrimp-tacos.html" class="dropdown-item">Shrimp Tacos</a>
+                        <a href="sinigang.html" class="dropdown-item">Sinigang</a>
+                        <a href="spaghetti-carbonara.html" class="dropdown-item">Spaghetti Carbonara</a>
+                        <a href="sushi-bake.html" class="dropdown-item">Sushi Bake</a>
+                        <a href="sweet-potato-bites.html" class="dropdown-item">Sweet Potato Bites</a>
+                    </div></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+    <main class="container">
+        <section class="recipe-detail">
+            <img src="images/sweet-potato-bites.webp" alt="Sweet Potato Bites">
+            <div id="cooking">
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div id=area>
+                    <div id="sides">
+                        <div id="pan"></div>
+                        <div id="handle"></div>
+                    </div>
+                    <div id="pancake">
+                        <div id="pastry"></div>
+                    </div>
+                </div>
+            </div>
+            <h2>Sweet Potato Bites</h2>
+            <p>Deliciously crispy and tender sweet potato bites, perfect as an appetizer or a side dish. They are seasoned and baked to perfection.</p>
+            <h3>Ingredients</h3>
+            <ul>
+                <li>2 large sweet potatoes, peeled and cut into bite-sized cubes</li>
+                <li>2 tbsp olive oil</li>
+                <li>1 tsp paprika</li>
+                <li>1/2 tsp garlic powder</li>
+                <li>1/2 tsp onion powder</li>
+                <li>1/2 tsp ground cumin</li>
+                <li>Salt and pepper to taste</li>
+                <li>Fresh parsley for garnish (optional)</li>
+            </ul>
+            <h3>Instructions</h3>
+            <ol>
+                <li>Preheat the oven to 425°F (220°C). Line a baking sheet with parchment paper.</li>
+                <li>In a large bowl, toss sweet potato cubes with olive oil, paprika, garlic powder, onion powder, cumin, salt, and pepper until evenly coated.</li>
+                <li>Spread the sweet potato cubes in a single layer on the prepared baking sheet.</li>
+                <li>Bake for 25-30 minutes, or until sweet potatoes are crispy on the outside and tender inside, turning once halfway through cooking.</li>
+                <li>Garnish with fresh parsley if desired, and serve warm.</li>
+            </ol>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Delicious Bites. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="../js/scripts.js"></script>
+</body>
+</html>
